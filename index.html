@@ -18,13 +18,14 @@
         
         
 
-        <div class="audioPlayer">
+        <div class="trackUpload">
             <label for="audioFile">Upload an audio (MP3) File: </label>
-            <input type="file" id="audioFile" name="audio" accept="audio/*" /> 
+            <input type="file" id="audioFile" name="audio" accept="audio/*" />
             <!--Input needs a label to function correctly. This isn't always the case, and only applies for certain input types, with file being one of them.-->
 
-            <audio id="audioPlayer" controls>
-                <source id="audioSource" src="" type="audio/mpeg">
+
+            <audio id="audioPlayer" src="" controls>
+                <!-- <source id="audioSource" src="" type="audio/mpeg"> -->
                 No audio test
             </audio>
         </div>
