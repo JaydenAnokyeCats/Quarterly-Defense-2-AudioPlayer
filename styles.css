@@ -6,9 +6,5 @@ body{
     background-color: rgb(182, 182, 182);
 }
 
-#leftDivider{
-    display: flex;
-    flex-direction: column;
-    background-color: red;
-    width: 50rem;
-}
+
+
