@@ -5,38 +5,40 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Audio Player</title>
         <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400&amp;display=swap" rel="stylesheet">
         <script src="script.js" defer></script>
     </head>
 
-    text
     <body>
         <nav class="navbar">
-            <div class="navbar-content">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
+            <img src="images/MusicIcon.png" alt="Purple music logo with a play button and audio menu" class="webIcon">
+            <div class="headerText">
+                ▣- Audio Player 3001 -▣
+                <p>Upload and play your own kinds of audio!</p>
             </div>
+                
+        </nav>
 
-        <center>
-        <h1>This is placeholder text</h1>
-        <p>This is also placeholder text, used to visualize my changes</p>
-        </center>
-        
-        
+        <div class="trackDetails">
+            <h1 id="songTitle">Your Selected Song Plays Here</h1>
+            <button id="favoriteButton" onclick="favorites">♡ Favorite</button>
+            <audio id="audioPlayer" src="" controls>
+                    Your browser does not support the audio element.
+            </audio>
+        </div>
         
 
         <div class="trackUpload">
             <label for="audioFile">Upload an audio (MP3) File: </label>
             <input type="file" id="audioFile" name="audio" accept="audio/*" />
             <!--Input needs a label to function correctly. This isn't always the case, and only applies for certain input types, with file being one of them.-->
-
-
-            <audio id="audioPlayer" src="" controls>
-                <!-- <source id="audioSource" src="" type="audio/mpeg"> -->
-                No audio test
-            </audio>
         </div>
 
+        <div>
+            <p>Hello this is where favorites list will go</p>
+            <ul id="favoritesList">
+                <!-- Favorite songs will be listed here -->
+        </div>
         
     </body>
 

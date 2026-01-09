@@ -16,3 +16,15 @@ fileInput.addEventListener("change", playAudio => {
     audioPlayer.play(playAudio);
     console.log(audioPlayer.play(playAudio)); //Output to the console, Promise. A promise is the eventual completion or failure of an asynchronous operation. (Asynchronous meaning it doesn't fully complete and instead the runtime is parallel to other functions)  
 });
+// let favoritesList = document.getElementById("favoritesList");
+let favoritesList = [];
+
+function favorites(){
+    for(let i = 0; i < fileInput.files.length; i++){
+        favoritesList.push(fileInput.files[i].name);
+        console.log(favoritesList);
+    }
+    
+}
+
+document.getElementById("favoriteButton").addEventListener("click", favorites)

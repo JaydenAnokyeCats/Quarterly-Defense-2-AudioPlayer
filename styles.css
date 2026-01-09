@@ -3,8 +3,78 @@
 }
 
 body{
+    font-family: 'JetBrains Mono', monospace;
+    margin: auto;
+    padding: 0;
     background-color: rgb(182, 182, 182);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
+/* Navbar Styles */
+.navbar{
+    display: flex;
+    background-color: rgb(153, 149, 149);
+    justify-content: space-between;
+}
 
+.headerText{
+     /* Text Properties */
+    color: rgb(19, 19, 19);
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+    /* Flexbox Properties */
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1em;
+}
 
+.webIcon {
+    height: 8em;
+    width: auto;
+    display: block;
+}
+
+/* Track Details Styling */
+.trackDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#favoriteButton{
+    width: 10em;
+    height: 2em;
+    background-color: rgb(143, 46, 255);
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    align-self: center;
+    margin-bottom: 15px;
+}
+
+#favoriteButton:hover{
+    background-color: rgb(128, 44, 224);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Audio Upload Styles */
+.trackUpload{
+    position: fixed;
+    bottom: 0;
+}
+/* As much as i would have liked to not have this be fixed, i can make a work around so the other elements arent as affected*/
+
+/* HTML Audio Player Styling */
+audio{
+    align-self: center;
+    width: 40%;
+    outline: 2px solid black;
+    border-radius: 8px;
+    background-color: rgb(143, 46, 255);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
