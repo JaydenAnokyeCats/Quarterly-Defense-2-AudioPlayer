@@ -80,3 +80,21 @@ audio{
 }
 
 /* Audio Information Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label{
+    padding: 1em;
+}
+input {
+    border-width: 2.5px;
+    border-radius: 5px;
+}
+
+select{
+    padding: auto;
+    border-radius: 8px;
+}
