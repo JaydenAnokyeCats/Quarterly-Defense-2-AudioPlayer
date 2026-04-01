@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400&amp;display=swap" rel="stylesheet">
+    <script src="/js/script.js" defer></script>
+</head>
+<body>
+    <h1>Enter Audio Details</h1>
+    Fill out the information of the audio you uploaded.
+
+    <form action="store-data.php                                                                                      ">
+        <label for="audName">Audio Name</label>
+        <input type="text" id="audioName" name="audName" placeholder="Enter in the name of your audio...">
+
+        <label for="audArtist">Audio Creator</label>
+        <input type="text" id="audioArtist" name="audArtist" placeholder="Enter in the artist of the audio...">
+
+        <label for="release">Release Date</label>
+        <input type="text" id="releaseDate" name="release" placeholder="Enter in the audio's release date...">
+
+        <label for="genre">Audio Genre</label>
+        <select name="genre" id="audioGenre">
+            <option value="" disabled selected>Select a Genre...</option>
+            <optgroup label="Rock & Alternative">
+                <option>Rock</option>
+                <option>Alternative Rock</option>
+                <option>Indie Rock</option>
+                <option>Punk</option>
+                <option>Metal</option>
+            </optgroup>
+
+            <optgroup label="Hip-Hop & Rap">
+                <option>Hip-Hop</option>
+                <option>Rap</option>
+                <option>Trap</option>
+                <option>Drill</option>
+                <option>Lo-fi Hip-Hop</option>
+            </optgroup>
+
+            <optgroup label="Electronic">
+                <option>EDM</option>
+                <option>House</option>
+                <option>Techno</option>
+                <option>Dubstep</option>
+                <option>Ambient</option>
+            </optgroup>
+
+            <optgroup label="Pop">
+                <option>Pop</option>
+                <option>Synthpop</option>
+                <option>K-pop</option>
+                <option>J-pop</option>
+            </optgroup>
+
+            <optgroup label="Jazz & Blues">
+                <option>Jazz</option>
+                <option>Smooth Jazz</option>
+                <option>Blues</option>
+                <option>Soul</option>
+            </optgroup>
+
+            <optgroup label="Country & Folk">
+                <option>Country</option>
+                <option>Bluegrass</option>
+                <option>Folk</option>
+            </optgroup>
+
+            <optgroup label="World">
+                <option>Reggae</option>
+                <option>Afrobeat</option>
+                <option>Latin</option>
+                <option>Salsa</option>
+            </optgroup>
+        </select>
+
+        <input type="submit" value="Save Information" />
+    </form>
+</body>
+</html>
